@@ -8,8 +8,8 @@ WRFのデータを処理するためのGrADsスクリプトシェルです。著
 `q file`
 と打つと、.dat内の変数一覧を見ることができます。
 
-For foreign users:
-
+## For foreign users:
+Here is a script that outputs the WRF(Weather Research and Forecasting model) output results in png format. It can be processed for both vertical and horizontal directions. Feel free to use it, but I take no responsibility for it. 
 
 なお、カラーバー出力のためにcbarnを利用しています。
 利用には、スクリプトのダウンロードファイルが必要です。
