@@ -8,6 +8,9 @@ WRFのデータを処理するためのGrADsスクリプトシェルです。著
 `q file`
 と打つと、.dat内の変数一覧を見ることができます。
 
+For foreign users:
+
+
 なお、カラーバー出力のためにcbarnを利用しています。
 利用には、スクリプトのダウンロードファイルが必要です。
 https://researchmap.jp/multidatabases/multidatabase_contents/detail/232785/5dc1aaaf5a0d631c7e4b20d34f002f6c?frame_id=822841
