@@ -1,7 +1,7 @@
 # GrADs_script_for_WRF
 
 WRFのデータを処理するためのGrADsスクリプトシェルです。
-GrADsのインストールは、grads_how_to_install.mdを見てください
+GrADsのインストールは、How_to_install_grads.mdを見てください
 著者が趣味程度で解析用に作成したものになりますので、ご使用なされる際には**自己責任**でお願いいたします。
 スクリプトを利用される際は、テキストエディタ等でファイル名等を変更してから、
 `run script.gs `
