@@ -20,7 +20,7 @@ export "LIBGL_ALWAYS_INDIRECT=1"
 ```
 - 補足：Windows 11のWSLだと、"Authorization required, but no authorization protocol specified Error in GXSTRT: Unable to connect to X server"が出た。
 あと、↑のbashの処理はいらず、
-- sudo aptで落としている状態でXserver(vcxsrv)をアンインストール＆インストールしなおして、
+- sudo aptでgradsをすでにインストールしている状態でXserver(vcxsrv)をアンインストール＆インストールしなおして、
 - Xserver起動時のGUIで、Extra Settingsのところで"Disable access control"にチェックを入れる
 -![image](https://user-images.githubusercontent.com/84554010/188621830-31b609c2-e0c4-4545-9e8e-d35ddc5b7a25.png)
 
