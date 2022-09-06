@@ -1,4 +1,4 @@
-# Ubuntu(WSL)上にGRADs導入
+# Ubuntu(WSL、Win10, Win11)上にGRADs導入
 
 ## 1.Ubuntu (WSL)でのGRADSの導入
 
