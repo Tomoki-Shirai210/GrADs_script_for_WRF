@@ -1,15 +1,14 @@
 # Ubuntu(WSL)上にGRADs導入
 
-#### WRFとMSMの処理スクリプトの例は[ここ](https://www.dropbox.com/sh/enp1o2c2i3rzdrc/AAB_HonCIUa0paPXs-vTkoOCa?dl=0)にいれてある
-
 ## 1.Ubuntu (WSL)でのGRADSの導入
 
 gradsそのもののインストール:Ubuntuで
 ```
+sudo apt update
 sudo apt install grads
 ```
 
-grads以外にインストールが必要なのは以下の3つ  
+grads以外にインストールが推奨されるのは以下の3つ(バッチモード(grads -b)実行ならいらない。ウィンドウが欲しければ、Xserverは必須。)
 ・Xserver(可視化用)  https://sourceforge.net/projects/vcxsrv/  
 起動時の設定は全部デフォルト。
 Windowsファイアウォールの設定はパブリックプライベート両方にも✓を入れる  
@@ -19,6 +18,16 @@ vi ~/.bashrc
 export DISPLAY=localhost:0.0
 export "LIBGL_ALWAYS_INDIRECT=1"
 ```
+- 補足：Windows 11のWSLだと、"Authorization required, but no authorization protocol specified Error in GXSTRT: Unable to connect to X server"が出た。
+あと、↑のbashの処理はいらず、
+- sudo aptで落としている状態でXserver(vcxsrv)をアンインストール＆インストールしなおして、
+- Xserver起動時のGUIで、Extra Settingsのところで"Disable access control"にチェックを入れる
+-![image](https://user-images.githubusercontent.com/84554010/188621830-31b609c2-e0c4-4545-9e8e-d35ddc5b7a25.png)
+
+と、`grads`でそのままGUIが起動できた(やや時間差あり)。 アンインストールとインストールは環境によっては必要ないかもしれない。 
+![image](https://user-images.githubusercontent.com/84554010/188621997-cddd06a2-893c-4246-945d-44d5569e55dc.png)
+
+
 ・Wgrib2  
 http://hydro.iis.u-tokyo.ac.jp/~akira/page/Linux/contents/tool/wgrib2.html
 をみてインストして、make。
