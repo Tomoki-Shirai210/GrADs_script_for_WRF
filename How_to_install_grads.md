@@ -24,7 +24,7 @@ export "LIBGL_ALWAYS_INDIRECT=1"
 - Xserver起動時のGUIで、Extra Settingsのところで"Disable access control"にチェックを入れる
 -![image](https://user-images.githubusercontent.com/84554010/188621830-31b609c2-e0c4-4545-9e8e-d35ddc5b7a25.png)
 
-と、`grads`でそのままGUIが起動できた(やや時間差あり)。 アンインストールとインストールは環境によっては必要ないかもしれない。 
+と、`grads`でそのままWindowが起動できた(やや時間差あり)。 アンインストールとインストールは環境によっては必要ないかもしれない。 
 ![image](https://user-images.githubusercontent.com/84554010/188621997-cddd06a2-893c-4246-945d-44d5569e55dc.png)
 
 
