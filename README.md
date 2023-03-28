@@ -107,4 +107,10 @@ extrapolate = .true.
 
 
 ```
+### ARWpostエラー
+Outside of lookup table bounds.
+- Bolton（1980）式から、相当温位と気圧を使って気温を出そうとする際に、WRFの結果が想定外の範囲になっていると発生するエラー
+- CAPEの算出において最初に引っかかる。'height,geopt,theta,tc,tk,td,td2,rh,rh2,umet,vmet,pressure,u10m,v10m,wdir,wspd,wd10,ws10,slp`までで止めると一旦は回避できる。
+- ただし、想定外の範囲になっているWRFの結果が妥当かどうかは、ちゃんと検討が必要
+
 
